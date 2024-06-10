@@ -1,0 +1,128 @@
+@import "../../../../../../shared/styles/variables.scss";
+@import "../../../../../../shared/styles/mixins.scss";
+
+.section__bottom {
+  display: flex;
+}
+
+.section__one {
+  flex: 3.5;
+  padding: 28px 28px 30px 28px;
+  background-color: transparent;
+  border: 1px solid $dark-violet;
+  border-radius: 30px;
+  margin-right: 20px;
+
+  .lesson__item {
+    @include items-center;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: $dark-text;
+    border-bottom: 1px solid $light-dark;
+
+    .lesson__hour {
+      @include items-center;
+      @include justify-center;
+      width: 40px;
+      height: 40px;
+      background-color: $light-dark;
+      border-radius: 50%;
+    }
+  }
+
+  h6 {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: normal;
+    margin-bottom: 16px;
+  }
+
+  span {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 9px 120px;
+    width: 100%;
+    background-color: $light-dark;
+    border-radius: 30px;
+    border: 0;
+    line-height: 135%;
+    cursor: pointer;
+  }
+}
+
+// ============================================================
+.section__two {
+  flex: 6.5;
+  border: 1px solid $dark-violet;
+  border-radius: 30px;
+}
+
+.two__container {
+  padding: 28px 28px 30px;
+  margin-bottom: 18px;
+
+  h6 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 16px;
+  }
+}
+
+.upcoming__item {
+  @include items-center;
+  display: flex;
+  color: $dark-text;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  border-bottom: 1px solid $light-dark;
+
+  .item_date {
+    @include items-center;
+    flex-direction: column;
+    width: 42px;
+    margin-right: 16px;
+
+    span {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 32px;
+      line-height: 135%;
+    }
+  }
+
+  .learn {
+    width: 180px;
+  }
+
+  .time {
+    font-size: 12px;
+
+    width: 70px;
+  }
+
+  .teacher__icon {
+    margin-right: -5px;
+  }
+
+  .teacher {
+    display: flex;
+    font-size: 12px;
+    font-family: "CircleLight";
+    width: 94px;
+  }
+}
+
+.main__btn {
+  display: flex;
+  padding: 9px 148px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 0px;
+  background-color: $light-dark;
+  cursor: pointer;
+}

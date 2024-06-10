@@ -1,0 +1,29 @@
+@import "../shared/styles/variables.scss";
+@import "../shared/styles/mixins.scss";
+
+.button {
+  padding: 8px 10px;
+  border-radius: 15px;
+  border: 0;
+  margin-right: 4px;
+}
+
+.btn1 {
+  border: 1px solid $violet;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.btn1:hover {
+  opacity: 0.8;
+}
+
+.btn2 {
+  background-color: $violet;
+  color: white;
+  cursor: pointer;
+}
+
+.btn2:hover {
+  opacity: 0.8;
+}

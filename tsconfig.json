@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "src/pages/ThisLayerAndPage.jsx",
+    "src/shared/assets/icons/ConnectivityCheck.jsx",
+    "src/shared/assets/icons/Achievements.jsx",
+    "src/widgets/main-page/dashboard/ui/schedule/calendar/MyCalendar.tsx",
+    "src/widgets/main-page/dashboard/ui/schedule/calendar/MyCalendar.tsx",
+    "src/widgets/main-page/dashboard/ui/schedule/Schedule.tsx"
+  ],
+  "exclude": ["node_modules"]
+}

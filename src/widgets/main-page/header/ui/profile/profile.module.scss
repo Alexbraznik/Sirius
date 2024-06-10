@@ -1,0 +1,110 @@
+@import "../../../../../shared/styles/variables";
+@import "../../../../../shared/styles/mixins.scss";
+
+.profile__window {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 262px;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-80%);
+  background-color: white;
+  border: 1px solid black;
+  z-index: 9999;
+
+  .tooltip__arrow {
+    position: absolute;
+    top: -10px;
+    right: 25%;
+    transform: translateX(50%);
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid $dark-violet;
+  }
+}
+
+.close__window {
+  width: 24px;
+  height: 24px;
+  color: $dark-violet;
+  margin: 10px 10px 10px auto;
+  cursor: pointer;
+}
+
+.container {
+  width: 190px;
+  border-bottom: 1px solid $light-dark;
+  margin: 0 auto;
+  margin-bottom: 12px;
+
+  h5 {
+    line-height: 135%;
+    font-size: 16px;
+    font-family: "CircleRegular";
+    font-weight: 400;
+    color: $dark-text;
+    margin-bottom: 12px;
+  }
+
+  .profile__item {
+    height: 48px;
+    width: 190px;
+    @include items-center;
+    border-radius: 12px;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+    &:last-child {
+      margin-bottom: 12px;
+    }
+
+    .item__img {
+      margin-right: 8px;
+    }
+
+    span {
+      font-size: 12px;
+      line-height: 135%;
+    }
+    p {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}
+
+.item__mihail {
+  background-color: $light-dark;
+}
+
+.profile__anna {
+  background-color: white;
+}
+
+.exit {
+  width: 190px;
+  @include items-center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  .link {
+    text-decoration: none;
+    color: $dark-blue;
+  }
+
+  .exit__icon {
+    cursor: pointer;
+  }
+
+  button {
+    color: $dark-blue;
+    font-family: "CircleRegular";
+    font-size: 16px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../../../../shared/styles/variables.scss";
+@import "../../../../../shared/styles/mixins.scss";
+
+.schedule__container {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+
+  select {
+    width: 253px;
+    border-radius: 8px;
+    border-color: $light-gray;
+    color: #79747f;
+  }
+
+  button {
+    padding: 10px 94px;
+    border-radius: 30px;
+    border: 0;
+    background-color: #decfff;
+    color: $dark-text;
+    cursor: pointer;
+  }
+}
+
+.schedule__date {
+  @include items-center;
+
+  .date__change {
+    @include items-center;
+    gap: 16px;
+    margin-right: 32px;
+    cursor: pointer;
+
+    span {
+      color: $dark-text;
+      font-family: "CircleBold";
+
+      cursor: pointer;
+    }
+  }
+
+  button {
+    padding: 8px 21px;
+    border-radius: 15px;
+    background-color: transparent;
+    border-color: $violet;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  .date__help {
+    cursor: pointer;
+  }
+}

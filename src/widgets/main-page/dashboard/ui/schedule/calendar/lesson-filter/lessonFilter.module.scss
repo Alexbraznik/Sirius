@@ -1,0 +1,56 @@
+@import "../../../../../../../shared/styles/variables.scss";
+@import "../../../../../../../shared/styles/mixins.scss";
+
+.event__item {
+  margin-bottom: 4px;
+  border-radius: 2px;
+  padding: 2px;
+
+  .item__wallet {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .item__time {
+    line-height: 135%;
+  }
+
+  .item__title {
+    line-height: 8px;
+    font-size: 10px;
+  }
+}
+
+.borderViolet {
+  outline: 1px solid $violet;
+  outline-offset: 2px;
+}
+.borderGreen {
+  border: 1px solid #22782b;
+}
+
+.borderBlack {
+  border: 1px solid #79747f;
+}
+
+.borderRed {
+  border: 1px solid #e12828;
+}
+
+.crossed {
+  text-decoration: line-through;
+}
+
+.bgcViolet {
+  background-color: #eeeeff;
+  border: 1px solid #decfff;
+}
+
+.bgcGray {
+  background-color: #f5f5f5;
+  border: 1px solid #c8c5cd;
+}
+
+.bgcGreen {
+  background-color: #d7f0d6;
+}

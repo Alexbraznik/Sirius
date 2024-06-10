@@ -1,0 +1,29 @@
+@import "../../../../shared/styles/variables";
+@import "../../../../shared/styles/mixins.scss";
+
+.inputGroup {
+  @include items-center;
+  flex-direction: column;
+
+  input {
+    border-color: $light-gray;
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+
+  .passwordWrapper {
+    position: relative;
+    margin-bottom: 16px;
+    width: 100%;
+
+    .eyeIcon {
+      position: absolute;
+      right: 12px;
+      top: 40%;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+  }
+}

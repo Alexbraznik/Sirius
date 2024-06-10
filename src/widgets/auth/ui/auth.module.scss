@@ -1,0 +1,101 @@
+@import "../../../shared/styles/mixins.scss";
+@import "../../../shared/styles/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth__container {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+
+  .logo {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  h2 {
+    font-family: "CircleRegular";
+    font-weight: normal;
+    color: $dark-text;
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .rememberMe {
+    @include items-center;
+    margin-bottom: 36px;
+    color: #79747f;
+
+    input {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  button {
+    @include justify-center;
+    width: 100%;
+    justify-content: center;
+    padding: 12px 0;
+    font-family: "CircleBold";
+    font-size: 18px;
+    line-height: 125%;
+    background-color: $violet;
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    margin-bottom: 6px;
+    cursor: pointer;
+  }
+
+  .linksGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+    color: $dark-blue;
+    line-height: 135%;
+
+    p {
+      cursor: pointer;
+    }
+  }
+
+  .footer {
+    @include items-center;
+    @include justify-center;
+    flex-direction: column;
+    line-height: 135%;
+    margin-bottom: 100px;
+
+    p {
+      color: $dark-text;
+    }
+
+    span {
+      color: $dark-blue;
+      cursor: pointer;
+    }
+  }
+}
+
+.ru {
+  color: $dark-violet;
+  font-size: 24px;
+  line-height: 21px;
+  margin-right: 8px;
+}
+
+.en {
+  color: #79747f;
+  font-size: 16px;
+  line-height: 135%;
+}

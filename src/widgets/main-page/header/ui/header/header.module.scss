@@ -1,0 +1,77 @@
+@import "../../../../../shared/styles/variables";
+@import "../../../../../shared/styles/mixins.scss";
+
+.wrapper__header {
+  background-color: #fdfdff;
+  height: 60px;
+  width: 1154px;
+  border-radius: 0 0 25px 25px;
+  -webkit-box-shadow: -1px 8px 11px 1px rgba(34, 60, 80, 0.21);
+  -moz-box-shadow: -1px 8px 11px 1px rgba(34, 60, 80, 0.21);
+  box-shadow: -1px 8px 11px 1px rgba(34, 60, 80, 0.21);
+  margin-bottom: 20px;
+}
+
+.header {
+  @include items-center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 50px 0 32px;
+
+  p {
+    font-size: 24px;
+    line-height: 24px;
+
+    span {
+      color: $dark-violet;
+      cursor: pointer;
+    }
+  }
+}
+
+.wrapper__icons {
+  @include items-center;
+  gap: 16px;
+
+  .chat {
+    @include items-center;
+    @include justify-center;
+    border: 2px solid $dark-violet;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    position: relative;
+    cursor: pointer;
+
+    .notify {
+      width: 16px;
+      height: 16px;
+      background-color: #e84849;
+      position: absolute;
+      @include items-center;
+      @include justify-center;
+      border-radius: 50%;
+      top: 0;
+      right: 0;
+      margin-right: -5px;
+      margin-top: -5px;
+
+      p {
+        color: white;
+        line-height: 8px;
+        font-size: 10px;
+        font-family: "CircleBold";
+      }
+    }
+  }
+
+  .profile__icons {
+    @include items-center;
+    position: relative;
+
+    .iconArrow {
+      @include items-center;
+      gap: 8px;
+    }
+  }
+}

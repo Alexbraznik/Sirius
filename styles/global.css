@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Подключение шрифтов */
+@font-face {
+  font-family: "CircleLight";
+  src: url("../src/shared/assets/fonts/CirceRounded-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "CircleRegular";
+  src: url("../src/shared/assets/fonts/CirceRounded-Regular.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "CircleBold";
+  src: url("../src/shared/assets/fonts/CirceRounded-Bold.otf")
+    format("opentype");
+}

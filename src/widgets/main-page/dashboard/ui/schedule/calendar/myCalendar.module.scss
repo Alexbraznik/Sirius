@@ -1,0 +1,46 @@
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  .calendar__header {
+    width: 153px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+
+    span {
+      padding-right: 6px;
+      color: #79747f;
+      font-size: 15px;
+    }
+  }
+}
+
+.calendar__item {
+  width: 153px;
+  height: 101px;
+  border: 1px solid #ececec;
+  font-size: 12px;
+}
+
+.daysFromPrevMonth {
+  font-family: "CircleLight";
+  color: #c8c5cd;
+  padding: 4px;
+}
+
+.dayContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.event__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80%;
+  padding: 0 4px;
+}

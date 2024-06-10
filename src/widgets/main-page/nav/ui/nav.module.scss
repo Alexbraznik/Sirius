@@ -1,0 +1,100 @@
+@import "../../../../shared/styles/variables";
+@import "../../../../shared/styles/mixins.scss";
+
+.main {
+  width: 236px;
+  max-height: 704px;
+  background-color: $light-dark;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  @include justify-center;
+  padding: 44px 0 40px;
+}
+
+.item__list {
+  margin-bottom: 40px;
+
+  .item__link {
+    text-decoration: none;
+
+    &:active {
+      color: $dark-text;
+    }
+  }
+
+  .item__container {
+    list-style-type: none;
+    border-radius: 0 30px 30px 0;
+    width: 216px;
+    align-items: center;
+
+    &.selected {
+      background: $violet;
+    }
+  }
+  .item {
+    @include items-center;
+    padding-left: 44px;
+    line-height: 21px;
+    width: 216px;
+    height: 40px;
+    cursor: pointer;
+
+    &__icon {
+      margin-right: 8px;
+      @include items-center;
+      @include justify-center;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.inviteFriends {
+  width: 196px;
+  height: 128px;
+  background-color: #fdfdff;
+  margin: 0 auto;
+  border-radius: 15px;
+  color: $dark-text;
+  position: relative;
+  margin-bottom: 24px;
+
+  &__text {
+    padding: 16px 38px 0 16px;
+  }
+
+  &__free {
+    line-height: 20px;
+  }
+
+  &__textLight {
+    font-family: "CircleLight";
+    line-height: 12px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  &__btn {
+    color: $dark-text;
+    padding: 8px 16px;
+    border-radius: 15px;
+    border: none;
+    background-color: $light-blue;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #c4def6;
+    }
+  }
+}
+
+.gift {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
